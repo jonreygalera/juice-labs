@@ -27,9 +27,9 @@ const Carousel: React.FC<ICarouselProps> = (props) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4 font-inter">
+    <div className="flex flex-col items-center justify-center min-h-screen p-4 font-inter">
       <div
-        className="relative w-full max-w-4xl mx-auto rounded-xl shadow-2xl overflow-hidden"
+        className="relative w-full max-w-4xl mx-auto rounded-xl shadow-2xl overflow-hidden border-2"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -58,7 +58,7 @@ const Carousel: React.FC<ICarouselProps> = (props) => {
           className="p-3 bg-white/70 hover:bg-white/90 transition-all duration-300 rounded-full shadow-lg focus:outline-none"
           aria-label="Previous Slide"
         >
-          left
+          {"<"}
         </button>
 
         {/* Navigation dots */}
@@ -81,7 +81,7 @@ const Carousel: React.FC<ICarouselProps> = (props) => {
           className="p-3 bg-white/70 hover:bg-white/90 transition-all duration-300 rounded-full shadow-lg focus:outline-none"
           aria-label="Next Slide"
         >
-          Right
+          {">"}
         </button>
       </div>
     </div>

@@ -1,10 +1,11 @@
 import type { JuiceData as IJuiceData } from "../interface/IJuiceData";
+import OrangeMain from "../assets/productsImages/orange/main.png";
 
 const data : IJuiceData[] = [
   {
     key: 'orange',
     name: 'Orange Juice',
-    productImage: '/orange/main.png',
+    productImage: OrangeMain,
     segmentImages: [
       { src: '/orange/segment1.png', alt: 'Orange segment 1', className: 'w-full h-auto object-cover' },
       { src: '/orange/segment2.png', alt: 'Orange segment 2', className: 'w-full h-auto object-cover' },
